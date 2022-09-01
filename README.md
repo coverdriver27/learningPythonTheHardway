@@ -1,1 +1,1 @@
-# learningPythonTheHardway - Starting out
+# learningPythonTheHardway - Exercises 

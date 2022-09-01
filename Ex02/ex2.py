@@ -10,3 +10,4 @@ print ("I Could have code like this.") # and this comment after is ignored
 print ("This will run")
 print ("Hi #there")
 print ("That prints ^")
+#The # in the code is inside a string ""

@@ -1,0 +1,35 @@
+Linux
+Linux is a varied operating system with many different ways to install software. I’m assuming if you are
+running Linux then you know how to install packages, so here are your instructions:
+1. Use your package manager to install Python 3.6, and if you can’t, then download source from
+https://www.python.org/downloads/release/python-360/ and build from source.
+2. Use your Linux package manager, and install the Atom text editor. If Atom does not suite you,
+then see Alternative Text Editors at the end of this exercise.
+3. Make sure you can get to Atom easily by putting it in your window manager’s menu.
+4. Find your Terminal program. It could be called GNOME Terminal, Konsole, or xterm.
+5. Put your Terminal in your dock as well.
+6. Run your Terminal program. It won’t look like much.
+7. In your Terminal program, run python3.6. You run things in Terminal by just typing the command name and pressing Enter. If you can’t run python3.6, try running just python.
+8. Type quit() and press Enter to exit python.
+9. You should be back at a prompt similar to what you had before you typed python. If not, find
+out why.
+10. Learn how to make a directory in Terminal.
+11. Learn how to change into a directory in Terminal.
+12. Use your editor to create a file in this directory. Typically, you will make the file, Save or Save
+As..., and pick this directory.
+13. Go back to Terminal using just the keyboard to switch windows. Look it up if you can’t figure it
+out.
+14. Back in Terminal, list the directory to see your newly created file.
+
+
+0.3.1 Linux: What You Should See
+
+$ python
+>>> qui t ( )
+$ mkdir lpthw
+$ cd lpthw
+# . . . Use your t e x t edi to r here to edi t t e s t . t x t . . .
+$ l s
+t e s t . t x t
+$
+It is still correct if you see different information than mine, but yours should be similar

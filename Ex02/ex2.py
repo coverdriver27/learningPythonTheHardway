@@ -8,3 +8,5 @@ print ("I Could have code like this.") # and this comment after is ignored
 # print ("This will not run.")
 
 print ("This will run")
+print ("Hi #there")
+print ("That prints ^")

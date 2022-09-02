@@ -1,4 +1,0 @@
-google: python3 list functions - 
-			https://www.tutorialspoint.com/python3/python_lists.htm 
-			https://www.w3schools.com/python/python_ref_list.asp
-			https://www.programiz.com/python-programming/methods/list

@@ -1,0 +1,79 @@
+Exercise 4: Variables and Names
+
+Now you can print things with print and you can do math.
+The next step is to learn about variables. In programming, a variable is nothing more than a name for something,
+similar to how my name "Zed" is a name for, "The human who wrote this book.
+" Programmers use these variable names to make their code read more like English and because they have lousy memories.
+If they didn't use good names for things in their software, they'd get lost when they tried to read their code again.
+
+Code to write:
+
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90
+cars_not_driven = cars - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+
+print("There are", cars, "cars available.")
+print("There are only", drivers, "drivers available.")
+print("There will be", cars_not_driven, "empty cars today.")
+print("We can transport", carpool_capacity, "people today.")
+print("We have", passengers, "to carpool today.")
+print("We need to put about", average_passengers_per_car,
+      "in each car.")
+
+Note: The _ in space_in_a_car is called an underscore character. Find out how to type it if you do not already know.
+We use this character a lot to put an imaginary space between words in variable names.
+
+
+What You Should See
+
+$ python3.6 ex4.py
+There are 100 cars available.
+There are only 30 drivers available.
+There will be 70 empty cars today.
+We can transport 120.0 people today.
+We have 90 to carpool today.
+We need to put about 3.0 in each car.
+
+
+Study Drills
+
+When I wrote this program the first time I had a mistake, and Python told me about it like this:
+
+Traceback (most recent call last):
+  File "ex4.py", line 8, in <module>
+    average_passengers_per_car = car_pool_capacity / passenger
+NameError: name 'car_pool_capacity' is not defined
+
+
+Explain this error in your own words. Make sure you use line numbers and explain why.
+
+>> Because In the list of defined variables, car_pool_capacity is not set or defined to a value
+
+
+Here are more study drills:
+
+I used 4.0 for space_in_a_car, but is that necessary?
+
+>> Probably not because in this script we are talking about people and a person can be consided as a whole number, thus using a float
+such as 4.0 would give us a value up to a decimal value.
+
+What happens if it's just 4?
+Remember that 4.0 is a floating point number. It's just a number with a decimal point,
+and you need 4.0 instead of just 4 so that it is floating point.
+
+>> If it is just 4, we get a whole number
+
+Write comments above each of the variable assignments.
+
+Make sure you know what = is called (equals) and that its purpose is to give
+data (numbers, strings, etc.) names (cars_driven, passengers).
+Remember that _ is an underscore character.
+
+Try running python3.6 from the Terminal as a calculator like you did before,
+and use variable names to do your calculations. Popular variable names are also i, x, and j.

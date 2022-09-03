@@ -48,6 +48,6 @@ print(f"He's got {eyes} eyes and {hair} hair.")
 print(f"His teeth are usually {teeth} depending on the coffee.")
 
 # this line is tricky, try to get it exactly right
-# We can use f in the print command to do python withing the command
+# We can use f in the print command to do python withing the commands
 total = age + height + weight
 print(f"If i add {age}, {height}, and {weight} I get {total}.")

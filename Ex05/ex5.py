@@ -27,7 +27,7 @@ print("-------------------------------------------------------------------------
 # Study Drills
 name = 'Dhulian Pereira'
 age = 27 # we don't need qoutes when declaring numbers or integers
-height = 82 # inches
+height = 82 # inche's
 weight = 165 # lbs
 eyes = 'Brown'
 teeth = 'White'

@@ -13,7 +13,7 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6)
 
 print("Is it true that 3 + 2 < 5 -7?")
 
-print(3 + 2 < 5 - 7)  # returns a true or false
+print(3 + 2 < 5 - 7)  # Evaluates the statement, and prints the result
 
 print("What is 3 + 2 =", 3 + 2)
 print("What is 5 - 7 =", 5 - 7)
@@ -22,9 +22,9 @@ print("Oh, that's why it's False.")
 
 print("How about some more.")
 
-print("Is it greater?", 5 > -2)  # returns a true or false (Is 5 Greater than -2?)
-print("Is it greater or equal?", 5 >= -2)  # returns a true or false
-print("Is it less or equal?", 5 <= -2)  # return a true or false
+print("Is it greater?", 5 > -2)  # Evaluates the statement, and prints the result
+print("Is it greater or equal?", 5 >= -2)  # Evaluates the statement, and prints the result
+print("Is it less or equal?", 5 <= -2)  # Evaluates the statement, and prints the result
 print("----------------------------------------------------------------")
 print("Now lets calculate your annual salary:")
 print("$xy.xy * 2080")

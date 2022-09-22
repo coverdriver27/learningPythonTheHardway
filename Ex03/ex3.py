@@ -24,7 +24,7 @@ print ("Is it greater?", 5 > -2) # returns a true or false (Is 5 Greater than -2
 print ("Is it greater or equal?", 5 >= -2) # returns a true or false
 print ("Is it less or equal?", 5 <= -2) # return a true or false
 print ("----------------------------------------------------------------")
-print ("Now lets calculate you're annual salary:")
+print ("Now lets calculate your annual salary:")
 print ("$xy.xy * 2080")
 print ("If i make 30$ a hour how much will i make annually? =", 30 * 2080)
 print ("----------------------------------------------------------------")

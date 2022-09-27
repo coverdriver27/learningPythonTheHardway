@@ -47,10 +47,12 @@ So, you're 38 old, 6'2" tall and 180lbs heavy.
 
 Study Drills
 Go online and find out what Python's input does.
->>
+>> is used to take user input. By default, it returns the user input in form of a string.
+Python input function :
+https://www.geeksforgeeks.org/python-input-function/#:~:text=Python%20input()%20function%20is,in%20form%20of%20a%20string.
 
 Can you find other ways to use it? Try some of the samples you find.
->>
+>>Done
 
 Write another "form" like this to ask some other questions.
->>
+>> Done

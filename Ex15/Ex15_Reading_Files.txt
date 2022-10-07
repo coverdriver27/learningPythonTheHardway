@@ -1,0 +1,100 @@
+Exercise 15: Reading Files
+You know how to get input from a user with input or argv. Now you will learn about reading from a file. You may have to
+play with this exercise the most to understand what's going on, so do the exercise carefully and remember your checks.
+Working with files is an easy way to erase your work if you are not careful.
+
+This exercise involves writing two files. One is the usual ex15.py file that you will run, but the other is named
+ex15_sample.txt. This second file isn't a script but a plain text file we'll be reading in our script. Here are the
+contents of that file:
+
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots and lots of fun to have in here.
+
+What we want to do is "open" that file in our script and print it out. However, we do not want to just "hard code"
+the name ex15_sample.txt into our script. "Hard coding" means putting some bit of information that should come from the
+user as a string directly in our source code. That's bad because we want it to load other files later. The solution is
+to use argv or input to ask the user what file to open instead of "hard coding" the file's name.
+
+Code -->
+-----------------------------------------------------------------------------------------------------------------------
+from sys import argv
+
+script, filename = argv
+
+txt = open(filename)
+
+print(f"Here's your file {filename}:")
+print(txt.read())
+
+print("Type the filename again:")
+file_again = input("> ")
+
+txt_again = open(file_again)
+
+print(txt_again.read())
+-----------------------------------------------------------------------------------------------------------------------
+
+A few fancy things are going on in this file, so let's break it down real quickly:
+
+LINES 1-3 USES ARGV TO GET A FILENAME. NEXT WE HAVE LINE 5, WHERE WE USE A NEW COMMAND OPEN. RIGHT NOW, RUN PYDOC OPEN
+AND READ THE INSTRUCTIONS. NOTICE HOW, LIKE YOUR OWN SCRIPTS AND INPUT, IT TAKES A PARAMETER AND RETURNS A VALUE YOU CAN
+SET TO YOUR OWN VARIABLE. YOU JUST OPENED A FILE.
+
+LINE 7 PRINTS A LITTLE MESSAGE, BUT ON LINE 8 WE HAVE SOMETHING VERY NEW AND EXCITING. WE CALL A FUNCTION ON TXT NAMED
+READ. WHAT YOU GET BACK FROM OPEN IS A FILE, AND IT ALSO HAS COMMANDS YOU CAN GIVE IT. YOU GIVE A FILE A COMMAND BY
+USING THE . (DOT OR PERIOD), THE NAME OF THE COMMAND, AND PARAMETERS, JUST LIKE WITH OPEN AND INPUT. THE DIFFERENCE IS
+THAT TXT.READ() SAYS, "HEY TXT! DO YOUR READ COMMAND WITH NO PARAMETERS!"
+
+The remainder of the file is more of the same, but we'll leave the analysis to you in the Study Drills.
+
+What You Should See
+
+Warning
+
+Pay attention! I said pay attention! You have been running scripts with just the name of the script, but now that you
+are using argv you have to add arguments. Look at the very first line of the example below and you will see I do python
+ex15.py ex15_sample.txt to run it. See the extra argument ex15_sample.txt after the ex15.py script name. If you do not
+type that you will get an error so pay attention!
+
+I made a file called ex15_sample.txt and ran my script.
+
+-----------------------------------------------------------------------------------------------------------------------
+$ python3.6 ex15.py ex15_sample.txt
+Here's your file ex15_sample.txt:
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots and lots of fun to have in here.
+
+
+Type the filename again:
+>  ex15_sample.txt
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots and lots of fun to have in here.
+-----------------------------------------------------------------------------------------------------------------------
+
+Study Drills
+This is a big jump, so be sure you do this Study Drill as best you can before moving on.
+
+Above each line, write out in English what that line does.
+
+If you are not sure, ask someone for help or search online. Many times searching for "python3.6 THING" will find
+answers to what that THING does in Python. Try searching for "python3.6 open."
+
+
+I used the word "commands" here, but commands are also called "functions" and "methods." You will learn about functions
+and methods later in the book.
+
+
+Get rid of the lines 10-15 where you use input and run the script again.
+
+
+Use only input and try the script that way. Why is one way of getting the filename better than another?
+
+
+Start python3.6 to start the python3.6 shell, and use open from the prompt just like in this program. Notice how you
+can open files and run read on them from within python3.6?
+
+
+Have your script also call close() on the txt and txt_again variables. It's important to close files when you are done with them.

@@ -78,16 +78,18 @@ Study Drills
 This is a big jump, so be sure you do this Study Drill as best you can before moving on.
 
 Above each line, write out in English what that line does.
+>> Done
 
 If you are not sure, ask someone for help or search online. Many times searching for "python3.6 THING" will find
 answers to what that THING does in Python. Try searching for "python3.6 open."
-
+>> The open() function opens a file, and returns it as a file object.
 
 I used the word "commands" here, but commands are also called "functions" and "methods." You will learn about functions
 and methods later in the book.
 
 
 Get rid of the lines 10-15 where you use input and run the script again.
+>> Just prints the contents of the text file
 
 
 Use only input and try the script that way. Why is one way of getting the filename better than another?

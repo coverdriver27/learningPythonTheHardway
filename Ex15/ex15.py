@@ -20,3 +20,6 @@ txt_again = open(file_again)  # Now we use the file_again variable value within 
 
 print(txt_again.read())  # printing the txt variable from above that uses "." that tells python to do something,
 # here we use the read() method for reading the content of the file and print it out
+txt_again.close()  # closing the opened file
+txt.close()
+

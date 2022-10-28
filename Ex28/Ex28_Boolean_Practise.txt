@@ -1,0 +1,120 @@
+### Exercise 28: Boolean Practice
+
+The logic combinations you learned from the last exercise are called "Boolean" logic expressions. Boolean logic is used
+everywhere in programming. It is a fundamental part of computation, and knowing them very well is akin to knowing your
+scales in music.
+
+In this exercise you will take the logic exercises you memorized and start trying them out in Python. Take each of these
+logic problems and write what you think the answer will be. In each case it will be either True or False. Once you have
+the answers written down, you will start Python in your terminal and type each logic problem in to confirm your answers.
+
+------------------------------------------------------------------------------------------------------------------------
+
+True and True
+False and True
+1 == 1 and 2 == 1
+"test" == "test"
+1 == 1 or 2 != 1
+True and 1 == 1
+False and 0 != 0
+True or 1 == 1
+"test" == "testing"
+1 != 0 and 2 == 1
+"test" != "testing"
+"test" == 1
+not (True and False)
+not (1 == 1 and 0 != 1)
+not (10 == 1 or 1000 == 1000)
+not (1 != 10 or 3 == 4)
+not ("testing" == "testing" and "Zed" == "Cool Guy")
+1 == 1 and (not ("testing" == 1 or 1 == 0))
+"chunky" == "bacon" and (not (3 == 4 or 3 == 3))
+3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+I will also give you a trick to help you figure out the more complicated ones toward the end.
+
+Whenever you see these Boolean logic statements, you can solve them easily by this simple process:
+
+1. Find an equality test (== or !=) and replace it with its truth.
+2. Find each and/or inside parentheses and solve those first.
+3. Find each not and invert it.
+4. Find any remaining and/or and solve it.
+5. When you are done you should have True or False.
+
+##### I will demonstrate with a variation on #20:
+
+>> 3 != 4 and not ("testing" != "test" or "Python" == "Python")
+
+Here's me going through each of the steps and showing you the translation until I've boiled it down to a single result:
+
+##### Solve each equality test:
+
+    3 != 4 IS TRUE: TRUE AND NOT ("TESTING" != "TEST" OR "PYTHON" == "PYTHON")
+    "TESTING" != "TEST" IS TRUE: TRUE AND NOT (TRUE OR "PYTHON" == "PYTHON")
+    "PYTHON" == "PYTHON": TRUE AND NOT (TRUE OR TRUE)
+
+##### Find each and/or in parentheses ():
+
+    (TRUE OR TRUE) IS TRUE: TRUE AND NOT (TRUE)
+
+##### Find each not and invert it:
+
+    NOT (TRUE) IS FALSE: TRUE AND FALSE
+
+##### Find any remaining and/or and solve them:
+
+    TRUE AND FALSE IS FALSE
+
+With that we're done and know the result is False.
+
+#### Warning
+
+------------------------------------------------------------------------------------------------------------------------
+
+The more complicated ones may seem very hard at first. You should be able to take a good first stab at solving them, but
+do not get discouraged. I'm just getting you primed for more of these "logic gymnastics" so that later cool stuff is
+much easier. Just stick with it, and keep track of what you get wrong, but do not worry that it's not getting in your
+head quite yet. It'll come.
+
+------------------------------------------------------------------------------------------------------------------------
+
+#### What You Should See
+
+After you have tried to guess at these, this is what your session with Python might look like:
+
+------------------------------------------------------------------------------------------------------------------------
+
+$ python3.6
+Python 2.5.1 (r251:54863, Feb  6 2009, 19:02:12)
+[GCC 4.0.1 (Apple Inc. build 5465)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> True and True
+True
+>>> 1 == 1 and 2 == 2
+True
+
+------------------------------------------------------------------------------------------------------------------------
+
+#### Study Drills
+
+1. There are a lot of operators in Python similar to != and ==. Try to find as many "equality operators" as you can.
+They should be like < or <=.
+    ==	        Equal	                    x == y
+    !=	        Not equal	                x != y
+    >	        Greater than	            x > y
+    <	        Less than	                x < y
+    >=	        Greater than or equal to	x >= y
+    <=	        Less than or equal to	    x <= y
+
+2. Write out the names of each of these equality operators. For example, I call != "not equal."
+>> Done
+
+3. Play with Python by typing out new Boolean operators, and before you press Enter try to shout out what it is. Do not
+think about it. Shout the first thing that comes to mind. Write it down, then press Enter, and keep track of how many
+you get right and wrong.
+
+
+4. Throw away the piece of paper from 3 so you do not accidentally try to use it later.

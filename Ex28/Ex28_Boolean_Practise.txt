@@ -102,9 +102,15 @@ True
 
 1. There are a lot of operators in Python similar to != and ==. Try to find as many "equality operators" as you can.
 They should be like < or <=.
-
+    ==	        Equal	                    x == y
+    !=	        Not equal	                x != y
+    >	        Greater than	            x > y
+    <	        Less than	                x < y
+    >=	        Greater than or equal to	x >= y
+    <=	        Less than or equal to	    x <= y
 
 2. Write out the names of each of these equality operators. For example, I call != "not equal."
+>> Done
 
 3. Play with Python by typing out new Boolean operators, and before you press Enter try to shout out what it is. Do not
 think about it. Shout the first thing that comes to mind. Write it down, then press Enter, and keep track of how many

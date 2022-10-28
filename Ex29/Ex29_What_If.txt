@@ -1,0 +1,77 @@
+### Exercise 29: What If
+
+Here is the next script of Python you will enter, which introduces you to the if-statement. Type this in, make it run
+exactly right, and then we'll see if your practice has paid off.
+
+#### Code ---->
+
+------------------------------------------------------------------------------------------------------------------------
+
+people = 20
+cats = 30
+dogs = 15
+
+
+if people < cats:
+    print("Too many cats! The world is doomed!")
+
+if people > cats:
+    print("Not many cats! The world is saved!")
+
+if people < dogs:
+    print("The world is drooled on!")
+
+if people > dogs:
+    print("The world is dry!")
+
+
+dogs += 5
+
+if people >= dogs:
+    print("People are greater than or equal to dogs.")
+
+if people <= dogs:
+    print("People are less than or equal to dogs.")
+
+
+if people == dogs:
+    print("People are dogs.")
+
+------------------------------------------------------------------------------------------------------------------------
+
+#### What You Should See --->
+
+------------------------------------------------------------------------------------------------------------------------
+
+$ python3.6 ex29.py
+Too many cats! The world is doomed!
+The world is dry!
+People are greater than or equal to dogs.
+People are less than or equal to dogs.
+People are dogs.
+
+------------------------------------------------------------------------------------------------------------------------
+
+#### Study Drills
+
+In this Study Drill, try to guess what you think the if-statement is and what it does. Try to answer these questions in
+your own words before moving on to the next exercise:
+
+1. What do you think the if does to the code under it?
+    The statment passed to the if statement is true, then it performs the actions under the if-statement, if the
+    statement is not true then the actions are discarded as long there is no else statement
+
+2. Why does the code under the if need to be indented four spaces?
+    Just like when we made functions, we are defining actions that need to be taken within the if-statement, the actions
+    usually have 4 spaces or a tabbed space that means it is within the statement
+
+3. What happens if it isn't indented?
+    We receive a Syntax error
+
+
+4. Can you put other boolean expressions from Exercise 27 in the if-statement? Try it.
+    Yes
+
+5. What happens if you change the initial values for people, cats, and dogs?
+    Depending what if statement applies to the new value will only be executed
+

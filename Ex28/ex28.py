@@ -36,3 +36,30 @@ print("is 10 less than or equal to 10: ", 10 <= 10)
 # is 10 greater than or equal to 10:  True
 # is 10 less than or equal to 100:  True
 # is 10 less than or equal to 10:  True
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Terminal output
+
+# >>> True and True
+# True
+# >>> True and False
+# False
+# >>> False and True
+# False
+# >>> "test" == "test"
+# True
+# >>> "Test" == "test"
+# False
+# >>> 1 == 1 or 2 != 1
+# True
+# >>> True and 1 == 1
+# True
+# >>> False and 0 != 0
+# False
+# >>> "test" == 1
+# False
+# >>> not (True and False)
+# True
+# >>> not (True and True)
+# False
+# >>>

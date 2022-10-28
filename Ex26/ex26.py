@@ -99,3 +99,5 @@ if people <= dogs:
 
 if people == dogs:
     print("People are dogs.")
+
+# All errors have been fixed from the given file

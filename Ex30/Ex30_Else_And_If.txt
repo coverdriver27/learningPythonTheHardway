@@ -72,12 +72,15 @@ Alright, let's just take the trucks.
 #### Study Drills
 
 1. Try to guess what elif and else are doing.
+    for the values passed to the function, elif and else are conditions that are defined to do a action when the
+    boolean logic matches with the stated condition
 
 
 2. Change the numbers of cars, people, and trucks, and then trace through each if-statement to see what will be printed.
-
+    Done
 
 3. Try some more complex boolean expressions like cars > people or trucks < cars.
-
+    Done
 
 4. Above each line write an English description of what the line does.
+    Done

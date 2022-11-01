@@ -1,12 +1,16 @@
 # Exercise 31 : Making Decisions
 
+# Using if-statements --> if not, leads to elif (Else-if) Statements --> If nothing then else-statements
+# Changed the code a here to use print statements that has multiple lines in """ """ quotes
 print("""
 You enter a dark room with two doors!
 Do you go through door #1 or Door #2?
 """)
 
-door = input("1 or 2 > ")
+door = input("1 or 2 > ")  # printing it this way so the user will visually see that they need to input 1 or 2
 
+# from this point on, we will start to work on our if --> elif --> Statements
+# Note: you can see of the if-statements are indented to be branched withing to perform certain actions
 if door == "1":
     print("There is a giant bear here eating a cheese cake.")
     print("What do you do?")
@@ -45,5 +49,39 @@ elif door == "2":
 
 else:
     print("You Still Stumble and fall and hit your head, Good Job!!!!")
+
+
+twist = ("""
+Now since we are at the end of the Game! 
+Press "1" to cancel and exit the game. 
+""")
+
+press = input(twist)
+
+if press == "1":
+    print("""
+    Just Kidding !!!!! 
+    We are not done yet 
+    You Still need to escape because the bear is on the loose!!!!!!
+    Your options are as follows: 
+        1. Run of foot to the nearest village. 
+        2. Summon your inner goku 
+        3. Take the abandoned jet outside the cave. 
+    """)
+    select = "Select a option 1, 2 or 3 > "
+    pick = input(select)
+    if pick == "1":
+        print("Bears are fast, who we kidding your bear food!!!")
+    elif pick == "2":
+        print("Who we kidding you are just human so, you are bear food!")
+    elif pick == "3":
+        print("Who are we kidding you do not know how to handle a jet, so you crash!!!!, and still bear food")
+    else:
+        print(f"You avoided convention by picking {pick} so you survived!!! Congrats! ")
+
+else:
+    print("You Avoided convention so you, SURVIVED !!!!!")
+
+
 
 

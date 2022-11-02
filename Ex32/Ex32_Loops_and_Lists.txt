@@ -107,9 +107,10 @@ Element was: 5
 #### Study Drills
 
 Take a look at how you used range. Look up the range function to understand it.
-
+    Done, and added comments regarding range function in the exercise
 
 Could you have avoided that for-loop entirely on line 22 and just assigned range(0,6) directly to elements?
-
+    Tried to directly add it to the empty list and was getting a constant loop that kept running, we can make the
+    variable to elements = range(0, 7). but this would make the variable a range than a list
 
 Find the Python documentation on lists and read about them. What other operations can you do to lists besides append?

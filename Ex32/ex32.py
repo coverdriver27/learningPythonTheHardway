@@ -29,12 +29,12 @@ for i in change:
 # We also can build lists, first start with a empty on
 elements = []
 
-
 # Then use the range function to do 0 to 5 counts
 for i in range(0, 7):
     # range will basically will make a list from range(0, n) ---> [0, ....... , n-1]
     # range(start, stop, step)
     print(f"Adding {i} to the list.")
+    # elements += 1
     # append is a function that lists understand
     elements.append(i)  # The append method appends an element to the end of the list. just like str.strip() for strings
 

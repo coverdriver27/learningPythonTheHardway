@@ -1,10 +1,12 @@
-# Exercise 33 : While Loops
+"""
+Exercise 33 : While Loops
 
-# Intro tp while-loops
-# Remember unlike for loops, while loops are un-bounded (loop for every if conditions are not properly defined)
-# When writing while loops, for best practise write the while loops and right after define
-# the increment condition (for example variable = variable + 1) so it does not loop forever, and then append
-# good way to remember, a while loop, its a if statement and then a jump up to the condition
+Intro tp while-loops
+Remember unlike for loops, while loops are un-bounded (loop for every if conditions are not properly defined)
+When writing while loops, for best practise write the while loops and right after define
+the increment condition (for example variable = variable + 1) so it does not loop forever, and then append
+good way to remember, a while loop, its a if statement and then a jump up to the condition
+"""
 
 i = 0
 numbers = []

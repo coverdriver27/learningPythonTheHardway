@@ -37,11 +37,17 @@ else:
 # here we are comparing people and trucks
 # Only thing different here is that we only have two conditions here, if this then do this, if not for everything else
 # do this,  if --> else
-if people > trucks:
+if people > trucks or trucks > cars:
     print("Are people greater than trucks?:", people > trucks)
     print("Alright, lets just take the trucks.")
 else:
     print("Are people not greater than trucks?:", people <= trucks)
     print("Let's just stay home")
+
+if (people > trucks or cars < trucks) and (trucks < cars or people > trucks or (trucks >= people or people >= cars)):
+    print("Well that was complex")
+
+else:
+    print("Nothing was true")
 
 # We are using alot of wen-diagram logic here

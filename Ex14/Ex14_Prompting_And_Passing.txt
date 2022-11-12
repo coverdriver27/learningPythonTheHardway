@@ -1,0 +1,67 @@
+Exercise 14: Prompting and Passing
+
+Let's do one exercise that uses argv and input together to ask the user something specific. You will need this for the
+next exercise where you learn to read and write files. In this exercise we'll use input slightly differently by having
+it print a simple > prompt.
+
+Code -->
+-----------------------------------------------------------------------------------------------------------------------
+from sys import argv
+
+script, user_name = argv
+prompt = '> '
+
+print(f"Hi {user_name}, I'm the {script} script.")
+print("I'd like to ask you a few questions.")
+print(f"Do you like me {user_name}?")
+likes = input(prompt)
+
+print(f"Where do you live {user_name}?")
+lives = input(prompt)
+
+print("What kind of computer do you have?")
+computer = input(prompt)
+
+print(f"""
+Alright, so you said {likes} about liking me.
+You live in {lives}.  Not sure where that is.
+And you have a {computer} computer.  Nice.
+""")
+-----------------------------------------------------------------------------------------------------------------------
+
+We make a variable prompt that is set to the prompt we want, and we give that to input instead of typing it over and
+over. Now if we want to make the prompt something else, we just change it in this one spot and rerun the script.
+Very handy.
+
+What You Should See
+
+When you run this, remember that you have to give the script your name for the argv arguments.
+-----------------------------------------------------------------------------------------------------------------------
+$ python3.6 ex14.py zed
+Hi zed, I'm the ex14.py script.
+I'd like to ask you a few questions.
+Do you like me zed?
+>  Yes
+Where do you live zed?
+>  San Francisco
+What kind of computer do you have?
+>  Tandy 1000
+
+Alright, so you said Yes about liking me.
+You live in San Francisco.  Not sure where that is.
+And you have a Tandy 1000 computer.  Nice.
+-----------------------------------------------------------------------------------------------------------------------
+
+Study Drills
+
+Find out what the games Zork and Adventure were. Try to find a copy and play it.
+>> Yes
+
+Change the prompt variable to something else entirely.
+>> Done
+
+Add another argument and use it in your script, the same way you did in the previous exercise with first, second = ARGV.
+>> Done
+
+Make sure you understand how I combined a """ style multiline string with the {} format activator as the last print.
+>>

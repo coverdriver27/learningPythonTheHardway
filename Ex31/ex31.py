@@ -1,7 +1,10 @@
+"""
 # Exercise 31 : Making Decisions
 
 # Using if-statements --> if not, leads to elif (Else-if) Statements --> If nothing then else-statements
 # Changed the code a here to use print statements that has multiple lines in """ """ quotes
+"""
+
 print("""
 You enter a dark room with two doors!
 Do you go through door #1 or Door #2?

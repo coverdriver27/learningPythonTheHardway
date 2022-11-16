@@ -1,6 +1,9 @@
-# Exercise 32 : Loops and Lists
+"""
+ Exercise 32 : Loops and Lists
 
-# Create lists and add values/items intp it
+ Create lists and add values/items into it
+"""
+
 the_count = [1, 2, 3, 4, 5]  # List of numbers(int)
 fruits = ['apples', 'oranges', 'pears', 'apricots']  # List of strings
 change = [1, 'pennies', 2, 'dimes', 3, 'quarters']  # List of numbers and lists
@@ -20,7 +23,7 @@ for fruit in fruits:
     # variable named fruit is assigned each element/value of fruits in the loop
     print(f"A fruit of type: {fruit}")
 
-# Also we can go through mixed lists too
+# Also we can go through mixed lists to
 # notice we have to use () since we do not know what is in it
 for i in change:
     # Same thing as above
@@ -45,6 +48,21 @@ for i in elements:
     print(f"Element was: {i}")
 
 print(elements)  # this will show elements = [0, 1, 2, 3, 4, 5 ] because we used the range function above stating (0, 6)
+
+# trying out study drill 2 here below
+
+for elements2 in range(0, 7, 1):
+    print(f"Element2 was: {elements2}")
+    # elements2 = []
+
+    # elements2.append(element2)
+
+# Another way for task 2
+
+elements3 = list(range(0, 7))
+
+print(elements3)
+
 
 # howdy = elements[:]  # This will copy all the contents of the elements list to the howdy variable via [:]
 # print(howdy)

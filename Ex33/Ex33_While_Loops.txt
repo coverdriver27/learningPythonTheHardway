@@ -100,7 +100,7 @@ change how much it increments by.
 
 5. Write it to use for-loops and range. Do you need the incrementor in the middle anymore? What happens if you do not
 get rid of it?
-
+    Done in main Code
 
     If at any time that you are doing this it goes crazy (it probably will), just hold down CTRL and press c (CTRL-c)
     and the program will abort.

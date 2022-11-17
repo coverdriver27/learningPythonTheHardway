@@ -53,6 +53,28 @@ def while_loop (range, increment):
 
 while_loop(10, 2)
 
+"""
+converting the above while loop to a for-loop
+"""
+
+print("\n>>>>>> Now lets continue to run the same while-loop as a for loop <<<<<<<<<<<<<<\n ")
+
+numbers3 = []
+
+for b in range(0, 6):
+    print(f"At the top b is {b}")
+    numbers3.append(b)
+    print(f"Numbers now: ", numbers3)
+    print(f"At the bottom b is {b + 1}")
+
+print("The Numbers: ")
+for c in numbers3:
+    print(c)
+    # print("The Numbers:", c)
+    # print(c)
+
+
+
 # Output ---->
 # At the top i is 0
 # Number now:  [0]
@@ -176,3 +198,82 @@ while_loop(10, 2)
 # 4
 # 6
 # 8
+
+# Output with a while loop converted to a for loop
+# At the top i is 0
+# Number now:  [0]
+# At the bottom i is 1
+# At the top i is 1
+# Number now:  [0, 1]
+# At the bottom i is 2
+# At the top i is 2
+# Number now:  [0, 1, 2]
+# At the bottom i is 3
+# At the top i is 3
+# Number now:  [0, 1, 2, 3]
+# At the bottom i is 4
+# At the top i is 4
+# Number now:  [0, 1, 2, 3, 4]
+# At the bottom i is 5
+# At the top i is 5
+# Number now:  [0, 1, 2, 3, 4, 5]
+# At the bottom i is 6
+# The numbers:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+#
+# >>>>>>> Before function <<<<<<<<<<<
+#
+# At the top rng is 0
+# Numbers now:  [0]
+# At the bottom rng is 2
+# At the top rng is 2
+# Numbers now:  [0, 2]
+# At the bottom rng is 4
+# At the top rng is 4
+# Numbers now:  [0, 2, 4]
+# At the bottom rng is 6
+# At the top rng is 6
+# Numbers now:  [0, 2, 4, 6]
+# At the bottom rng is 8
+# At the top rng is 8
+# Numbers now:  [0, 2, 4, 6, 8]
+# At the bottom rng is 10
+# The Numbers:
+# 0
+# 2
+# 4
+# 6
+# 8
+#
+# >>>>>> Now lets continue to run the same while-loop as a for loop <<<<<<<<<<<<<<
+#
+# At the top b is 0
+# Numbers now:  [0]
+# At the bottom b is 1
+# At the top b is 1
+# Numbers now:  [0, 1]
+# At the bottom b is 2
+# At the top b is 2
+# Numbers now:  [0, 1, 2]
+# At the bottom b is 3
+# At the top b is 3
+# Numbers now:  [0, 1, 2, 3]
+# At the bottom b is 4
+# At the top b is 4
+# Numbers now:  [0, 1, 2, 3, 4]
+# At the bottom b is 5
+# At the top b is 5
+# Numbers now:  [0, 1, 2, 3, 4, 5]
+# At the bottom b is 6
+# The Numbers:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5

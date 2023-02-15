@@ -116,6 +116,7 @@ You greedy bastard! Good job!
 ### Study Drills
 
 Draw a map of the game and how you flow through it.
+>> start() --> bear_room() --> gold_room() --> dead() --> exit(0)
 
 Fix all of your mistakes, including spelling mistakes.
 

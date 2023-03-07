@@ -19,6 +19,25 @@ happy_bday = Song(["Happy birthday to you",
 bulls_on_parade = Song(["They rally around the family",
                         "With pockets full of shells"])
 
+lakers_anthem = Song(["""The Lakers are magnificent
+Critics better admit it
+We winning, shoot it, pivot
+With less than a second left and it swishes
+Don’t test us, you know how vicious"""])
+
+var1 = """Its, your Birthday,
+You get any gift you like
+just go out to the gift shop
+and swipe that card you gotcha name on it"""
+
 happy_bday.sing_me_a_song()
-# print(">>>>3")
+print("\n")
+lakers_anthem.sing_me_a_song()
+print("\n")
 bulls_on_parade.sing_me_a_song()
+
+print("\n -------------Using variables------------------------ \n")
+print(var1)
+print("\n")
+# var1.sing_me_a_song() ---> Wont work
+# we get a attribute error : AttributeError: 'str' object has no attribute 'sing_me_a_song'

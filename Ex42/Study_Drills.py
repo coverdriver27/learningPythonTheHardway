@@ -21,6 +21,7 @@ parent classes. This means that a single class can have multiple "is-a" relation
 For example, suppose you have a class called Bird that represents all birds, and a class called Mammal that represents 
 all mammals. You can create a class called Platypus that inherits from both Bird and Mammal, like this:
 """
+
 class Bird:
     def fly(self):
         print("I can fly!")

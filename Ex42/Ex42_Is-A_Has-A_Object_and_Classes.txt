@@ -146,6 +146,7 @@ seen as a sign that you are a bad programmer. If that happens, simply stop using
 >> Research why Python added this strange object class and what that means.
 
 >> Is it possible to use a class like it's an object?
+in Python, a class itself is an object.
 
 >> Fill out the animals, fish, and people in this exercise with functions that make them do things. See what happens when
    functions are in a "base class" like Animal versus in, say, Dog.

@@ -31,7 +31,12 @@ class Person:
 
 
 dog = Dog("Buddy", "Golden Retriever")
-person = Person("Alice", 30)
+person = Person("Bruno", 30)
+person.set_pet(dog)
+person.greet()
+
+dog = Dog("butters", "Golden terrier")
+person = Person("Iceal", 300)
 person.set_pet(dog)
 person.greet()
 
